@@ -32,20 +32,24 @@
       </header>
       <main class="mdl-layout__content">
         <img src="./images/download.png" alt="style">
-        <div class="page content">Chouse Positive or Negative</div>
-        <div id="RondomNumber"></div>
-          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Positive">
-            <input type="radio" id="Positive" class="mdl-radio__button" name="options" value="1" checked>
+        <p>pick positive or negative</p>
+        <div id="radio-buttons">
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="positive.">
+            <input checked class="mdl-radio__button" id="positive." name="radio" type="radio" value="on" />
             <span class="mdl-radio__label">Positive</span>
           </label>
-          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Negative">
-            <input type="radio" id="Negative" class="mdl-radio__button" name="options" value="2">
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="negative.">
+            <input class="mdl-radio__button" id="negative." name="radio" type="radio" value="off" />
             <span class="mdl-radio__label">Negative</span>
           </label>
-          <br />
-          <br />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="result ()">Get Number</button>
-        <div id="answer">
+        </div>
+        <br />
+        <div>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked()">
+            Show Value
+          </button>
+          <div id="radio-button-value">Your number is: .</div>
         </div>
       </main>
     </div>
